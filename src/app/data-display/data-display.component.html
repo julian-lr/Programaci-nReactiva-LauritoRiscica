@@ -1,0 +1,6 @@
+<div>
+  <input type="text" [formControl]="filterControl" placeholder="Filter by name">
+  <ul>
+    <li *ngFor="let item of data$ | async">{{ item.name }}</li>
+  </ul>
+</div>
